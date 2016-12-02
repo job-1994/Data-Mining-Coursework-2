@@ -1,0 +1,141 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.UserClassifier 
+Relation:     opttraining
+Instances:    100
+Attributes:   65
+              1
+              2
+              3
+              4
+              5
+              6
+              7
+              8
+              9
+              10
+              11
+              12
+              13
+              14
+              15
+              16
+              17
+              18
+              19
+              20
+              21
+              22
+              23
+              24
+              25
+              26
+              27
+              28
+              29
+              30
+              31
+              32
+              33
+              34
+              35
+              36
+              37
+              38
+              39
+              40
+              41
+              42
+              43
+              44
+              45
+              46
+              47
+              48
+              49
+              50
+              51
+              52
+              53
+              54
+              55
+              56
+              57
+              58
+              59
+              60
+              61
+              62
+              63
+              64
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+Split on 19 AND class (In Set): N1 2(11.0)
+Split on 19 AND class (Not in Set)
+|   Split on 19 AND class (In Set): N5 9(11.0)
+|   Split on 19 AND class (Not in Set)
+|   |   Split on 19 AND class (In Set): N7 8(9.0)
+|   |   Split on 19 AND class (Not in Set)
+|   |   |   Split on 19 AND class (In Set): N9 6(8.0)
+|   |   |   Split on 19 AND class (Not in Set)
+|   |   |   |   Split on 19 AND class (In Set): N11 5(5.0)
+|   |   |   |   Split on 19 AND class (Not in Set)
+|   |   |   |   |   Split on 19 AND class (In Set): N13 4(12.0)
+|   |   |   |   |   Split on 19 AND class (Not in Set)
+|   |   |   |   |   |   Split on 19 AND class (In Set): N15 3(10.0)
+|   |   |   |   |   |   Split on 19 AND class (Not in Set)
+|   |   |   |   |   |   |   Split on 19 AND class (In Set): N17 0(10.0)
+|   |   |   |   |   |   |   Split on 19 AND class (Not in Set)
+|   |   |   |   |   |   |   |   Split on 19 AND class (In Set): N19 7(23.0/11.0)
+|   |   |   |   |   |   |   |   Split on 19 AND class (Not in Set): N20 1(1.0)
+
+Time taken to build model: 269.22 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.75 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         513               10.0195 %
+Incorrectly Classified Instances      4607               89.9805 %
+Kappa statistic                          0     
+Mean absolute error                      0.18  
+Root mean squared error                  0.3007
+Relative absolute error                 99.9998 %
+Root relative squared error            100.0401 %
+Total Number of Instances             5120     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,100     0
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,101     1
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     2
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,103     3
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     4
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,100     5
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,101     6
+                 1,000    1,000    0,100      1,000    0,182      0,000    0,500     0,100     7
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     8
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     9
+Weighted Avg.    0,100    0,100    0,010      0,100    0,018      0,000    0,500     0,100     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+   0   0   0   0   0   0   0 510   0   0 |   a = 0
+   0   0   0   0   0   0   0 518   0   0 |   b = 1
+   0   0   0   0   0   0   0 506   0   0 |   c = 2
+   0   0   0   0   0   0   0 526   0   0 |   d = 3
+   0   0   0   0   0   0   0 508   0   0 |   e = 4
+   0   0   0   0   0   0   0 510   0   0 |   f = 5
+   0   0   0   0   0   0   0 516   0   0 |   g = 6
+   0   0   0   0   0   0   0 513   0   0 |   h = 7
+   0   0   0   0   0   0   0 506   0   0 |   i = 8
+   0   0   0   0   0   0   0 507   0   0 |   j = 9
+
