@@ -74,68 +74,83 @@ Test mode:    user supplied test set:  size unknown (reading incrementally)
 === Classifier model (full training set) ===
 
 
-Split on 19 AND class (In Set): N1 2(11.0)
+Split on 19 AND class (In Set): N1 7(12.0)
 Split on 19 AND class (Not in Set)
-|   Split on 19 AND class (In Set): N5 9(11.0)
-|   Split on 19 AND class (Not in Set)
-|   |   Split on 19 AND class (In Set): N7 8(9.0)
-|   |   Split on 19 AND class (Not in Set)
-|   |   |   Split on 19 AND class (In Set): N9 6(8.0)
-|   |   |   Split on 19 AND class (Not in Set)
-|   |   |   |   Split on 19 AND class (In Set): N11 5(5.0)
-|   |   |   |   Split on 19 AND class (Not in Set)
-|   |   |   |   |   Split on 19 AND class (In Set): N13 4(12.0)
-|   |   |   |   |   Split on 19 AND class (Not in Set)
-|   |   |   |   |   |   Split on 19 AND class (In Set): N15 3(10.0)
-|   |   |   |   |   |   Split on 19 AND class (Not in Set)
-|   |   |   |   |   |   |   Split on 19 AND class (In Set): N17 0(10.0)
-|   |   |   |   |   |   |   Split on 19 AND class (Not in Set)
-|   |   |   |   |   |   |   |   Split on 19 AND class (In Set): N19 7(23.0/11.0)
-|   |   |   |   |   |   |   |   Split on 19 AND class (Not in Set): N20 1(1.0)
+|   Split on 19 AND class (In Set): N3 9(11.0)
+|   Split on 19 AND class (Not in Set): N4 Classified by weka.classifiers.trees.J48
 
-Time taken to build model: 269.22 seconds
+N4 {
+J48 pruned tree
+------------------
+
+60 <= 6
+|   63 <= 0: 4 (12.0)
+|   63 > 0: 1 (8.0)
+60 > 6
+|   52 <= 14
+|   |   29 <= 12
+|   |   |   31 <= 1: 6 (9.0/1.0)
+|   |   |   31 > 1
+|   |   |   |   29 <= 1: 0 (10.0)
+|   |   |   |   29 > 1: 5 (3.0)
+|   |   29 > 12
+|   |   |   5 <= 9: 5 (2.0)
+|   |   |   5 > 9
+|   |   |   |   26 <= 0: 3 (12.0/1.0)
+|   |   |   |   26 > 0: 8 (8.0)
+|   52 > 14
+|   |   11 <= 11: 1 (2.0)
+|   |   11 > 11: 2 (11.0)
+
+Number of Leaves  :   10
+
+Size of the tree :  19
+
+}
+
+Time taken to build model: 113.32 seconds
 
 === Evaluation on test set ===
 
-Time taken to test model on supplied test set: 0.75 seconds
+Time taken to test model on supplied test set: 0.4 seconds
 
 === Summary ===
 
-Correctly Classified Instances         513               10.0195 %
-Incorrectly Classified Instances      4607               89.9805 %
-Kappa statistic                          0     
-Mean absolute error                      0.18  
-Root mean squared error                  0.3007
-Relative absolute error                 99.9998 %
-Root relative squared error            100.0401 %
+Correctly Classified Instances        2048               40      %
+Incorrectly Classified Instances      3072               60      %
+Kappa statistic                          0.3331
+Mean absolute error                      0.1338
+Root mean squared error                  0.3094
+Relative absolute error                 74.3443 %
+Root relative squared error            102.9525 %
 Total Number of Instances             5120     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,100     0
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,101     1
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     2
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,103     3
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     4
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,100     5
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,101     6
-                 1,000    1,000    0,100      1,000    0,182      0,000    0,500     0,100     7
-                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     8
+                 0,780    0,016    0,840      0,780    0,809      0,789    0,882     0,677     0
+                 0,622    0,099    0,414      0,622    0,497      0,439    0,761     0,296     1
+                 0,615    0,084    0,445      0,615    0,516      0,461    0,765     0,312     2
+                 0,686    0,087    0,475      0,686    0,561      0,512    0,800     0,358     3
+                 0,443    0,044    0,528      0,443    0,482      0,432    0,700     0,289     4
+                 0,069    0,124    0,058      0,069    0,063      -0,051   0,472     0,097     5
+                 0,558    0,137    0,313      0,558    0,401      0,330    0,710     0,219     6
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,100     7
+                 0,213    0,075    0,237      0,213    0,225      0,145    0,569     0,128     8
                  0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,099     9
-Weighted Avg.    0,100    0,100    0,010      0,100    0,018      0,000    0,500     0,100     
+Weighted Avg.    0,400    0,067    0,331      0,400    0,356      0,307    0,667     0,258     
 
 === Confusion Matrix ===
 
    a   b   c   d   e   f   g   h   i   j   <-- classified as
-   0   0   0   0   0   0   0 510   0   0 |   a = 0
-   0   0   0   0   0   0   0 518   0   0 |   b = 1
-   0   0   0   0   0   0   0 506   0   0 |   c = 2
-   0   0   0   0   0   0   0 526   0   0 |   d = 3
-   0   0   0   0   0   0   0 508   0   0 |   e = 4
-   0   0   0   0   0   0   0 510   0   0 |   f = 5
-   0   0   0   0   0   0   0 516   0   0 |   g = 6
-   0   0   0   0   0   0   0 513   0   0 |   h = 7
-   0   0   0   0   0   0   0 506   0   0 |   i = 8
-   0   0   0   0   0   0   0 507   0   0 |   j = 9
+ 398  29  54   0   4  15  10   0   0   0 |   a = 0
+   0 322  49  14  73  19  27   0  14   0 |   b = 1
+   4  46 311  47   1  16  73   0   8   0 |   c = 2
+   0   4   9 361   1  53  81   0  17   0 |   d = 3
+  49  31  22   1 225 108  47   0  25   0 |   e = 4
+   2   0  52  33   4  35 234   0 150   0 |   f = 5
+   0 180  25   5   2  11 288   0   5   0 |   g = 6
+  15 137 109  68  73  58  41   0  12   0 |   h = 7
+   1  24  52 150   5  79  87   0 108   0 |   i = 8
+   5   5  16  81  38 213  33   0 116   0 |   j = 9
 
